@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: 1d3d44d3809ea754b9277c2a93fd1fa5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6852038025505484821
+    second: CloudSet_0
+  - first:
+      213: 2368089268720640108
+    second: CloudSet_1
+  - first:
+      213: 432818047049630171
+    second: CloudSet_2
+  - first:
+      213: -6966376750964631941
+    second: CloudSet_3
+  - first:
+      213: 518851026292755663
+    second: CloudSet_4
+  - first:
+      213: 602901903856922212
+    second: CloudSet_5
+  - first:
+      213: 3739846252378745443
+    second: CloudSet_6
+  - first:
+      213: 109371404067667334
+    second: CloudSet_7
+  - first:
+      213: -5257607603251489214
+    second: CloudSet_8
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CloudSet_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 535
+        width: 260
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51039b1d744571f50800000000000000
+      internalID: 6852038025505484821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudSet_1
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 535
+        width: 374
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60228aa4a42dd020800000000000000
+      internalID: 2368089268720640108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudSet_2
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 535
+        width: 408
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd185ca78bda10600800000000000000
+      internalID: 432818047049630171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudSet_3
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 535
+        width: 138
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7696332145725f90800000000000000
+      internalID: -6966376750964631941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudSet_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 348
+        width: 421
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fccc6896244533700800000000000000
+      internalID: 518851026292755663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudSet_5
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 348
+        width: 471
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e6cc55610fd5800800000000000000
+      internalID: 602901903856922212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudSet_6
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 100
+        width: 986
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a6c9b1a5a96e330800000000000000
+      internalID: 3739846252378745443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CloudSet_7
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 100
+        width: 393
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68df90866b0948100800000000000000
+      internalID: 109371404067667334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -724, y: 152}
+      - {x: -721, y: 262}
+      - {x: -451, y: 277}
+      - {x: -462, y: 161}
+    - - {x: -373, y: 168}
+      - {x: -373, y: 270}
+      - {x: -5, y: 270}
+      - {x: -5, y: 168}
+    - - {x: 91, y: 167}
+      - {x: 97, y: 309}
+      - {x: 509, y: 296}
+      - {x: 500, y: 169}
+    - - {x: 585, y: 169}
+      - {x: 585, y: 243}
+      - {x: 724, y: 243}
+      - {x: 724, y: 169}
+    - - {x: 253, y: -19}
+      - {x: 253, y: 121}
+      - {x: 725, y: 121}
+      - {x: 725, y: -19}
+    - - {x: -725, y: -21}
+      - {x: -725, y: 106}
+      - {x: -307, y: 106}
+      - {x: -307, y: -21}
+    - - {x: -723, y: -270}
+      - {x: -723, y: -67}
+      - {x: 262, y: -67}
+      - {x: 262, y: -270}
+    - - {x: 331, y: -270}
+      - {x: 331, y: -137}
+      - {x: 727, y: -137}
+      - {x: 727, y: -270}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

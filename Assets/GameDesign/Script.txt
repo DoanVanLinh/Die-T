@@ -1,0 +1,9 @@
+*****CƠ CHẾ*****
+Thin -> thành bộ xương, nhảy cao hơn
+Normal -> Nhảy bth, trượt,
+Fat -> nổ tung, chỉ nhảy được 1 và rất thấp, lăn được, bị DELAY do nặng
+
+*****ĐỒ ĂN*****
+Đói dần
+- Rau: giảm chỉ số BMI
+- Còn lại: tăng chỉ số BMI
