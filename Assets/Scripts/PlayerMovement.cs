@@ -44,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundPosition.position, 0.1f, groundMask);
         if (isGrounded)
             velocity.y = 0;
-        Debug.Log(isGrounded);
         //Controll
         if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.z > 0 && !isMoving && isGrounded)
         {
