@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public Vector3 positionLand;
     public CharacterController controller;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
@@ -11,60 +12,66 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundMask;
 
     [Range(5f, 20f)] [SerializeField] private float speed = 12f;
+    [Range(0f, 20f)] [SerializeField] private float speedMove = 5f;
     private Vector3 targetPosition;
     private bool isMoving = false;
-    [SerializeField]private BMI currentBMI = BMI.Normal;
+    [SerializeField] private BMI currentBMI = BMI.Normal;
     private Vector3 velocity;
     private bool isGrounded;
     private float bmiPoint = 30f;
+    private float distantFromLand;
     private enum BMI { Thin = 18, Normal = 25, Fat = 35 };
     void Start()
     {
         targetPosition = transform.position;
+        distantFromLand = Mathf.Abs(positionLand.x-positionLand.y);
+        transform.position = new Vector3(transform.position.x,transform.position.y,positionLand.y);
     }
 
 
     void Update()
     {
         Movement();
-        if (Input.GetKeyDown(KeyCode.I))
-            transform.localScale = new Vector3(transform.localScale.x * 1.5f, transform.localScale.y * 1.5f, transform.localScale.z * 1.5f);
-    UpdateStatusPlayer();
+        UpdateStatusPlayer();
     }
     private void LateUpdate()
     {
+        controller.Move(velocity * Time.deltaTime);
+
         if (transform.position.z == targetPosition.z)
             isMoving = false;
 
         if (isMoving)
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+        {
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, transform.position.y, targetPosition.z), speed * Time.deltaTime);
+        }
+        velocity.y += gravity * Time.deltaTime;
+
     }
     private void Movement()
     {
-        isGrounded = Physics.CheckSphere(groundPosition.position, 0.1f, groundMask);
-        if (isGrounded)
-            velocity.y = 0;
+        isGrounded = Physics.CheckSphere(groundPosition.position, 0.5f, groundMask);
+        // if (isGrounded)
+        //     velocity.y = 0;
+        Debug.Log(isGrounded);
         //Controll
-        if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.z > 0 && !isMoving && isGrounded)
+        if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.z > positionLand.x && !isMoving && isGrounded)
         {
-            targetPosition = transform.position + Vector3.back * 2f;
+            targetPosition = transform.position + Vector3.back * distantFromLand;
             isMoving = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.z < 4 && !isMoving && isGrounded)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.z < positionLand.z && !isMoving && isGrounded)
         {
-            targetPosition = transform.position + Vector3.forward * 2f;
+            targetPosition = transform.position + Vector3.forward * distantFromLand;
             isMoving = true;
         }
+
+        controller.Move(Vector3.right * speedMove * Time.deltaTime);
 
         //Jump
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-
-
-        velocity.y += gravity * Time.deltaTime;
-
-        controller.Move(velocity * Time.deltaTime);
 
     }
     private void UpdateStatusPlayer()

@@ -14,7 +14,7 @@ TagManager:
   - Item
   - Ground
   - Player
-  - 
+  - Group
   - 
   - 
   - 
@@ -38,6 +38,69 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: 20
+    uniqueID: 4283262111
+    locked: 0
+  - name: 19
+    uniqueID: 1239775205
+    locked: 0
+  - name: 18
+    uniqueID: 985676247
+    locked: 0
+  - name: 17
+    uniqueID: 546268919
+    locked: 0
+  - name: 16
+    uniqueID: 3235883147
+    locked: 0
+  - name: 15
+    uniqueID: 725903833
+    locked: 0
+  - name: 14
+    uniqueID: 2932368683
+    locked: 0
+  - name: 13
+    uniqueID: 515569469
+    locked: 0
+  - name: 12
+    uniqueID: 3260579691
+    locked: 0
+  - name: 11
+    uniqueID: 2282417881
+    locked: 0
+  - name: 10
+    uniqueID: 3470457559
+    locked: 0
+  - name: 9
+    uniqueID: 1537940889
+    locked: 0
+  - name: 8
+    uniqueID: 2883798003
+    locked: 0
+  - name: 7
+    uniqueID: 138394815
+    locked: 0
+  - name: 6
+    uniqueID: 3787724757
+    locked: 0
+  - name: 5
+    uniqueID: 729419119
+    locked: 0
+  - name: 4
+    uniqueID: 703385693
+    locked: 0
+  - name: 3
+    uniqueID: 2584953203
+    locked: 0
+  - name: 2
+    uniqueID: 1027094095
+    locked: 0
+  - name: 1
+    uniqueID: 3914757699
+    locked: 0
+  - name: 0
+    uniqueID: 1322679319
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
