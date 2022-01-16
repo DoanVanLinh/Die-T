@@ -1,6 +1,1 @@
-public enum BMI
-{
-    Thin = 0,
-    Normal = 1,
-    Fat = 3
-}
+public enum BMI { Thin = 18, Normal = 25, Fat = 35 };

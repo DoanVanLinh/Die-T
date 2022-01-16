@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public PlayerInfor playerInfor;
     public Vector3 positionLand;
     public CharacterController controller;
     public float gravity = -9.81f;
@@ -15,24 +16,24 @@ public class PlayerMovement : MonoBehaviour
     [Range(0f, 20f)] [SerializeField] private float speedMove = 5f;
     private Vector3 targetPosition;
     private bool isMoving = false;
-    [SerializeField] private BMI currentBMI = BMI.Normal;
+
     private Vector3 velocity;
     private bool isGrounded;
     private float bmiPoint = 30f;
     private float distantFromLand;
-    private enum BMI { Thin = 18, Normal = 25, Fat = 35 };
+
     void Start()
     {
         targetPosition = transform.position;
-        distantFromLand = Mathf.Abs(positionLand.x-positionLand.y);
-        transform.position = new Vector3(transform.position.x,transform.position.y,positionLand.y);
+        distantFromLand = Mathf.Abs(positionLand.x - positionLand.y);
+        transform.position = new Vector3(transform.position.x, transform.position.y, positionLand.y);
+        UpdateStatusPlayer();
     }
 
 
     void Update()
     {
         Movement();
-        UpdateStatusPlayer();
     }
     private void LateUpdate()
     {
@@ -74,22 +75,23 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
 
     }
-    private void UpdateStatusPlayer()
+    public void UpdateStatusPlayer()
     {
-        switch (currentBMI)
+        float bmiPoint = playerInfor.CurrentBMI;
+        if (bmiPoint < (int)BMI.Normal)//Thin
         {
-            case BMI.Thin:
-                jumpHeight = 2.5f;
-                gravity = -10f;
-                break;
-            case BMI.Normal:
-                jumpHeight = 2f;
-                gravity = -15f;
-                break;
-            case BMI.Fat:
-                jumpHeight = 1f;
-                gravity = -25f;
-                break;
+            jumpHeight = 2.5f;
+            gravity = -10f;
+        }
+        else if (bmiPoint < (int)BMI.Fat)//Normal
+        {
+            jumpHeight = 2f;
+            gravity = -15f;
+        }
+        else//Fat
+        {
+            jumpHeight = 1f;
+            gravity = -25f;
         }
 
     }

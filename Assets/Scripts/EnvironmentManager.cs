@@ -18,6 +18,7 @@ public class EnvironmentManager : MonoBehaviour
 
     private int lengthBuilding;
     private int lengthDetailObject;
+    private int lengthFood;
     private int previewBuilding;
     private int previewDetailObject;
     private Vector3 positionSpawn;
@@ -28,7 +29,13 @@ public class EnvironmentManager : MonoBehaviour
     {
         lengthBuilding = countries[styleCountry].building.Count;
         lengthDetailObject = countries[styleCountry].detailObject.Count;
+        lengthFood = countries[styleCountry].foods.Count;
+
         emptyObj = new GameObject();
+        for (int i = 0; i < 6; i++)
+        {
+            SpawnEnvironment();
+        }
 
     }
 
@@ -36,7 +43,7 @@ public class EnvironmentManager : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
-            SpawnEnvironment();
+            RandomFood(countries[styleCountry].foods);
     }
     public void SpawnEnvironment()
     {
@@ -44,30 +51,40 @@ public class EnvironmentManager : MonoBehaviour
     }
     private void RandomSpawnGroup()
     {
-        Vector2 verticalRangeSpawn = new Vector2(currenSpawnGroup*distanceBetweenGroup,(currenSpawnGroup+1)*distanceBetweenGroup);
+        Vector2 verticalRangeSpawn = new Vector2(currenSpawnGroup * distanceBetweenGroup, (currenSpawnGroup + 1) * distanceBetweenGroup);
         //Building
-        GameObject cloneGroup = new GameObject(); 
-        cloneGroup.transform.position = new Vector3(currenSpawnGroup*distanceBetweenGroup,0,0);
+        GameObject cloneGroup = new GameObject();
+        cloneGroup.transform.position = new Vector3(currenSpawnGroup * distanceBetweenGroup, 0, 0);
         for (int i = 0; i < amountBuildingPerGroup; i++)
         {
-           GameObject buildingClone = RandomSpawn(countries[styleCountry].building, rangeSpawnBuilding, verticalRangeSpawn);
-           buildingClone.transform.parent = cloneGroup.transform;
-           buildingClone.GetComponent<SpriteRenderer>().sortingOrder = i;
+            GameObject buildingClone = RandomSpawn(countries[styleCountry].building, rangeSpawnBuilding, verticalRangeSpawn);
+            buildingClone.transform.parent = cloneGroup.transform;
+            buildingClone.GetComponent<SpriteRenderer>().sortingOrder = i;
         }
+
+        //Details
+        for (int i = 0; i < amountDetailPerGroup; i++)
+        {
+            GameObject detailClone = RandomSpawn(countries[styleCountry].detailObject, rangeSpawnDetailObject, verticalRangeSpawn);
+            detailClone.transform.parent = cloneGroup.transform;
+            detailClone.GetComponent<SpriteRenderer>().sortingOrder = i;
+        }
+
         cloneGroup.AddComponent<BoxCollider>();
         cloneGroup.GetComponent<BoxCollider>().isTrigger = true;
+        cloneGroup.AddComponent<AutoDestroy>();
         cloneGroup.layer = 9;
         cloneGroup.transform.parent = buildingParent.transform;
-        // RandomSpawn(countries[styleCountry].detailObject, rangeSpawnDetailObject, detailObjectParent);
+
         currenSpawnGroup++;
     }
     private GameObject RandomSpawn(List<GameObject> listObject, Vector2 horizontalRangeSpawn, Vector2 verticalRangeSpawn)
     {
         int index = 0;
-
+        int length = listObject.Count;
         do
         {
-            int random = Random.Range(0, lengthBuilding);
+            int random = Random.Range(0, length);
             if (random != index)
             {
                 index = random;
@@ -98,8 +115,26 @@ public class EnvironmentManager : MonoBehaviour
         } while (true);
 
         positionSpawn = new Vector3(randomX, 0, randomZ);
-        GameObject clone = Instantiate(listObject[index],positionSpawn , Quaternion.identity);
-        
+        GameObject clone = Instantiate(listObject[index], positionSpawn, Quaternion.identity);
+
+        return clone;
+    }
+
+    public GameObject RandomFood(List<Food> listObject)
+    {
+        int index = 0;
+        do
+        {
+            int random = Random.Range(0, lengthFood);
+            if (random != index)
+            {
+                index = random;
+                break;
+            }
+        } while (true);
+        Food spawnFood = listObject[index];
+        GameObject clone = Instantiate(spawnFood.prefab,Vector3.zero , Quaternion.identity);
+        clone.AddComponent<FoodInfor>().protein = spawnFood.protein;
         return clone;
     }
 }

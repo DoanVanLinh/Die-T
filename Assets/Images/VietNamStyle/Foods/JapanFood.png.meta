@@ -1,0 +1,411 @@
+fileFormatVersion: 2
+guid: dbd94068777c68c4faa385dbd2145457
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2135476189299934452
+    second: JapanFood_0
+  - first:
+      213: -5775453616910543851
+    second: JapanFood_1
+  - first:
+      213: 1173155255263844482
+    second: JapanFood_2
+  - first:
+      213: -5004377954544022397
+    second: JapanFood_3
+  - first:
+      213: 3118410344837370116
+    second: JapanFood_4
+  - first:
+      213: 5939992005244308406
+    second: JapanFood_5
+  - first:
+      213: 6138680033458055321
+    second: JapanFood_6
+  - first:
+      213: -6832845529857311567
+    second: JapanFood_7
+  - first:
+      213: -7794737799477324106
+    second: JapanFood_8
+  - first:
+      213: -5344936683260551407
+    second: JapanFood_9
+  - first:
+      213: -5471470737419983915
+    second: JapanFood_10
+  - first:
+      213: 3295599233990221066
+    second: JapanFood_11
+  - first:
+      213: -3712885308153689392
+    second: JapanFood_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1024
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JapanFood_0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 3352
+        width: 887
+        height: 702
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f40789a74cb2ad10800000000000000
+      internalID: 2135476189299934452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_1
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 3296
+        width: 959
+        height: 822
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5145d4bf88779dfa0800000000000000
+      internalID: -5775453616910543851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_2
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 3046
+        width: 1403
+        height: 1065
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28852603d72e74010800000000000000
+      internalID: 1173155255263844482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 2506
+        width: 926
+        height: 685
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c8b91c3c0ec8ab0800000000000000
+      internalID: -5004377954544022397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_4
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 2376
+        width: 1040
+        height: 750
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4015fe3cfa1d64b20800000000000000
+      internalID: 3118410344837370116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_5
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 2320
+        width: 1064
+        height: 635
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb4f31e1471f6250800000000000000
+      internalID: 5939992005244308406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_6
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1335
+        width: 871
+        height: 864
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998ec0067f8f03550800000000000000
+      internalID: 6138680033458055321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_7
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1142
+        width: 782
+        height: 1152
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc3dbb413bdc21a0800000000000000
+      internalID: -6832845529857311567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_8
+      rect:
+        serializedVersion: 2
+        x: 2452
+        y: 1441
+        width: 1016
+        height: 829
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b618d8054783d390800000000000000
+      internalID: -7794737799477324106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 230
+        width: 1194
+        height: 686
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fdc4fb768f2d5b0800000000000000
+      internalID: -5344936683260551407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_10
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 141
+        width: 1374
+        height: 694
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d323297a5e6114b0800000000000000
+      internalID: -5471470737419983915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JapanFood_12
+      rect:
+        serializedVersion: 2
+        x: 2802
+        y: 152
+        width: 1294
+        height: 1199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da8bb3eb7e297cc0800000000000000
+      internalID: -3712885308153689392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 838698d2a7ed4dc47974d3d3a749d858
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

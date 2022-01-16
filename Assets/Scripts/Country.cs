@@ -9,4 +9,5 @@ public class Country
     public GameObject road;
     public List<GameObject> building = new List<GameObject>();
     public List<GameObject> detailObject = new List<GameObject>();
+    public List<Food> foods = new List<Food>();
 }
